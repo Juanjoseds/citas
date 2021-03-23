@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Inicio
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,28 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Inicio</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div id="container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Tu cita hoy:</ion-card-subtitle>
+        <!--<ion-card-title>Card Title</ion-card-title>-->
+      </ion-card-header>
+
+      <ion-card-content id="tab1Content">
+        <div class="cita">
+          <ion-icon class="reloj" name="alarm-outline"></ion-icon>
+          <p>18:00h</p>
+        </div>
+
+        <div class="deleteCita">
+          <ion-button color="danger" size="small">Eliminar cita</ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <!--<app-explore-container name="Tab 1 page"></app-explore-container>-->
 </ion-content>
