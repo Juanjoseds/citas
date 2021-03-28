@@ -12,4 +12,5 @@ export class Tab2Page {
   registerCita(form){
     console.log(form.value.hora);
   }
+
 }
